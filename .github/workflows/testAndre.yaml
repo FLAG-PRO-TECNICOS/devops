@@ -1,0 +1,11 @@
+name: testAndre
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
+      - run: echo "${{ secrets.MY_SECRET }}"
+      - run: echo "${{ vars.MY_VAR }}"
