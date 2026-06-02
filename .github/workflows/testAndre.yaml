@@ -6,6 +6,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - run: echo "Mas que dia bonito!"
       - run: echo "${{ secrets.MY_SECRET }}"
-      - run: echo "${{ vars.MY_VAR }}"
+      - run: echo "Olá ${{ vars.MINHA_VAR }}, bem-vindo/a!"
