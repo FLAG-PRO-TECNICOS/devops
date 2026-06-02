@@ -4,4 +4,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -H "Content-Type: application/json" -d "{\"content\": \"${{ vars.MY_MESSAGE }}\"}" "${{ secrets.DISCORD_WEBHOOK }}"
+      - name: Enviar mensagem para o Discord
+        - run: curl -H "Content-Type: application/json" -d "{\"content\": \"${{ vars.MY_MESSAGE }}\"}" "${{ secrets.DISCORD_WEBHOOK }}"
