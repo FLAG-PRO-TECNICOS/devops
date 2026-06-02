@@ -8,4 +8,4 @@ jobs:
     steps:
       - run: echo "Mas que dia bonito!"
       - run: echo "${{ secrets.MY_SECRET }}"
-      - run: echo "Olá ${{ vars.MINHA_VAR }}, bem-vindo/a!"
+      - run: echo "Olá ${{ vars.MY_VAR }}, bem-vindo/a!"
