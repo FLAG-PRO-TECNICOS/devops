@@ -11,6 +11,6 @@ jobs:
           curl -H "Content-Type: application/json" \
             -X POST \
             -d "{
-              \"content\": \"🚀 New push to ${GITHUB_REPOSITORY}\nBranch: ${GITHUB_REF_NAME}\nCommit: ${GITHUB_SHA}\nAuthor: ${GITHUB_ACTOR}\"
+              \"content\": \"🚀 New message from ${GITHUB_REPOSITORY}\n ${{ secrets.MY_SECRET }}\"
             }" \
             "${{ secrets.DISCORD_WEBHOOK }}"
